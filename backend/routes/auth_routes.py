@@ -31,33 +31,3 @@ def login():
         additional_claims={"role": user['role']}
     )
     return jsonify(access_token=access_token, role=user['role']), 200
-
-(.venv) PS C:\Users\User\PycharmProjects\pro_pic> git add .
-git : The term 'git' is not recognized as the name of a cmdlet, function, script file, or operable program. Check the spelling of the name, or if a path was
-included, verify that the path is correct and try again.
-At line:1 char:1
-+ git add .
-+ ~~~
-    + CategoryInfo          : ObjectNotFound: (git:String) [], CommandNotFoundException
-    + FullyQualifiedErrorId : CommandNotFoundException
-
-(.venv) PS C:\Users\User\PycharmProjects\pro_pic> git commit -m "Initial commit"
-git : The term 'git' is not recognized as the name of a cmdlet, function, script file, or operable program. Check the spelling of the name, or if a path was
-included, verify that the path is correct and try again.
-At line:1 char:1
-+ git commit -m "Initial commit"
-+ ~~~
-    + CategoryInfo          : ObjectNotFound: (git:String) [], CommandNotFoundException
-    + FullyQualifiedErrorId : CommandNotFoundException
-
-(.venv) PS C:\Users\User\PycharmProjects\pro_pic> git push -u origin main
-git : The term 'git' is not recognized as the name of a cmdlet, function, script file, or operable program. Check the spelling of the name, or if a path was
-included, verify that the path is correct and try again.
-At line:1 char:1
-+ git push -u origin main
-+ ~~~
-    + CategoryInfo          : ObjectNotFound: (git:String) [], CommandNotFoundException
-    + FullyQualifiedErrorId : CommandNotFoundException
-
-(.venv) PS C:\Users\User\PycharmProjects\pro_pic>
-
