@@ -1,0 +1,141 @@
+:root {
+  --brand-primary: #2c3e50;
+  --brand-secondary: #3498db;
+  --bg-light: #f7f9fa;
+  --bg-white: #ffffff;
+  --text-dark: #2d3e50;
+  --text-light: #7f8c8d;
+  --border: #dce1e3;
+}
+
+body {
+  font-family: 'Helvetica Neue', Arial, sans-serif;
+  background: var(--bg-light);
+  color: var(--text-dark);
+  margin: 0;
+  padding: 0;
+}
+
+/* Container */
+.container {
+  max-width: 900px;
+  margin: 2rem auto;
+  padding: 0 1rem;
+}
+
+/* Buttons */
+button {
+  background: var(--brand-secondary);
+  border: none;
+  color: white;
+  padding: 0.5em 1em;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 0.9rem;
+}
+button:hover {
+  background: #2980b9;
+}
+button.cancel {
+  background: #e74c3c;
+}
+
+/* Inputs */
+input, textarea {
+  border: 1px solid var(--border);
+  border-radius: 4px;
+  padding: 0.5em;
+  font-size: 0.9rem;
+  width: 100%;
+  box-sizing: border-box;
+}
+input::placeholder, textarea::placeholder {
+  color: var(--text-light);
+}
+
+/* Form grids */
+.form-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 1rem;
+}
+
+/* Table */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  background: var(--bg-white);
+  box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+  margin-top: 1rem;
+}
+th, td {
+  padding: 0.75em 1em;
+  border: 1px solid var(--border);
+  text-align: left;
+}
+th {
+  background: var(--brand-primary);
+  color: white;
+  position: sticky;
+  top: 0;
+}
+tbody tr:nth-child(even) {
+  background: #f2f6f8;
+}
+tbody tr:hover {
+  background: #e1eef5;
+}
+
+/* Search bar */
+.search-bar {
+  display: flex;
+  gap: 0.5rem;
+  margin: 1rem 0;
+}
+.search-bar input {
+  flex: 1;
+}
+.search-bar button {
+  flex: 0 0 auto;
+}
+
+/* Logout */
+.logout-btn {
+  float: right;
+  margin-bottom: 1rem;
+  background: #e67e22;
+}
+.logout-btn:hover {
+  background: #d35400;
+}
+
+/* Wrap your table in a scrollable container */
+.table-container {
+  overflow-x: auto;
+  margin-top: 1rem;
+}
+
+/* Let the table size to its content */
+.table-container table {
+  width: auto;
+  min-width: 100%;
+}
+
+/* Prevent weird wrapping */
+th, td {
+  white-space: nowrap;
+  padding: 0.75em 1em;
+  border: 1px solid var(--border);
+}
+
+/* Your existing header styling */
+th {
+  background: var(--brand-primary);
+  color: var(--text-dark);
+  position: sticky;
+  top: 0;
+}
+
+/* Zebra striping & hover */
+tbody tr:nth-child(even) { background: #f2f6f8; }
+tbody tr:hover             { background: #e1eef5; }
