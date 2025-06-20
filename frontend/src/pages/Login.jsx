@@ -11,7 +11,7 @@ export default function Login() {
     e.preventDefault();
     setError('');
     try {
-      const res = await axios.post('http://127.0.0.1:5000/api/auth/login', creds);
+      const res = await axios.post(`${process.env.REACT_APP_API_URL}/api/auth/login`, creds);
       // Save token & role
       localStorage.setItem('token', res.data.access_token);
       localStorage.setItem('role', res.data.role);
